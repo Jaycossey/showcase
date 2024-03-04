@@ -5,6 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Reusable card component to hold plaintext
 const ContactForm = (props) => {
+    const handleSubmit = () => {
+        event.preventDefault();
+        console.log("click");
+    }
     
     return (
         // Container div
@@ -43,7 +47,8 @@ const ContactForm = (props) => {
                                     rounded-md" 
                         label="otherInfo" 
                         placeholder="Your message here."></textarea>
-                <button type="submit">
+                <button type="submit"
+                        onClick={handleSubmit}>
                     <FontAwesomeIcon
                         className="text-3xl"
                         icon={faEnvelope} />

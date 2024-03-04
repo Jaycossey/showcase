@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Reusable card component to hold plaintext
 const ContactForm = (props) => {
-    const handleSubmit = () => {
-        event.preventDefault();
-        console.log("click");
-    }
+    // const handleSubmit = () => {
+    //     event.preventDefault();
+        
+    // }
     
     return (
         // Container div
@@ -31,24 +31,25 @@ const ContactForm = (props) => {
             <p>If you would like to work with me, follow these links or fill out the form below!</p>
             
             <form id="contactForm" 
+                action="https://formsubmit.co/jaycossey@live.com" 
+                method="POST"
                 className='flex 
                             flex-col 
                             text-left 
                             gap-2 
                             pt-4'>
 
-                <TextInput label="Name" placeholder="Enter your name" />
-                <TextInput label="Email" placeholder="Email" />
-                <TextInput label="Company" placeholder="Company Name" />
-                <TextInput label="Subject" placeholder="Message Subject" />
+                <TextInput label="Name" type="text" placeholder="Enter your name" />
+                <TextInput label="Email" type="email" placeholder="Email" />
+                <TextInput label="Company" type="text" placeholder="Company Name" />
+                <TextInput label="Subject" type="text" placeholder="Message Subject" />
                 <label for="otherInfo">Message:</label>
                 <textarea className="h-40
                                     p-2
                                     rounded-md" 
                         label="otherInfo" 
                         placeholder="Your message here."></textarea>
-                <button type="submit"
-                        onClick={handleSubmit}>
+                <button type="submit">
                     <FontAwesomeIcon
                         className="text-3xl"
                         icon={faEnvelope} />

@@ -10,6 +10,7 @@ const Home = (props) => {
                             flex-col
                             text-center
                             p-10
+                            pt-20
                             px-10
                             sm:px-36
                             gap-12

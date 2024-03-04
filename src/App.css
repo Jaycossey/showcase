@@ -1,0 +1,39 @@
+/* Background styles  */
+.bg-pix-left {
+    background-image: url("images/manada_background.png");
+    background-position: left;
+}
+
+.bg-pix-left,
+.bg-pix-right {
+    background-size: full;
+    animation: slideLeft;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: smooth;
+    overflow: scroll;
+}
+
+.bg-pix-right {
+    background-image: url("images/manada_background.png");
+    background-position: right;
+    animation-direction: reverse;
+}
+
+@keyframes slideLeft {
+    0% {
+        background-position: right;
+    }
+    100% {
+        background-position: left;
+    }
+}
+
+
+/* Portfolio styles */
+.custom-link:hover {
+    cursor: url('./icons/cursor-icon.png'), auto;
+    transform: scale(1.10);
+    transition: linear;
+    transition-duration: 0.2s;
+}

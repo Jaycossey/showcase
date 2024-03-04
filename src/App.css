@@ -1,11 +1,8 @@
 /* Background styles  */
-.bg-pix-left {
-    background-image: url("images/manada_background.png");
-    background-position: left;
-}
 
 .bg-pix-left,
 .bg-pix-right {
+    background-image: url("./images/manada_background.png");
     background-size: full;
     animation: slideLeft;
     animation-duration: 1s;
@@ -14,8 +11,11 @@
     overflow: scroll;
 }
 
+.bg-pix-left {
+    background-position: left;
+}
+
 .bg-pix-right {
-    background-image: url("images/manada_background.png");
     background-position: right;
     animation-direction: reverse;
 }

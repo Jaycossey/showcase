@@ -31,7 +31,7 @@ const ContactForm = (props) => {
             <p>If you would like to work with me, follow these links or fill out the form below!</p>
             
             <form id="contactForm" 
-                action="https://formsubmit.co/jaycossey@live.com" 
+                action="https://formsubmit.co/dcf3516cf6ffc1cefb232d15e256a2a5" 
                 method="POST"
                 className='flex 
                             flex-col 
@@ -43,11 +43,11 @@ const ContactForm = (props) => {
                 <TextInput label="Email" type="email" placeholder="Email" />
                 <TextInput label="Company" type="text" placeholder="Company Name" />
                 <TextInput label="Subject" type="text" placeholder="Message Subject" />
-                <label for="otherInfo">Message:</label>
-                <textarea className="h-40
+                <label for="message">Message:</label>
+                <textarea name="message"
+                        className="h-40
                                     p-2
                                     rounded-md" 
-                        label="otherInfo" 
                         placeholder="Your message here."></textarea>
                 <button type="submit">
                     <FontAwesomeIcon

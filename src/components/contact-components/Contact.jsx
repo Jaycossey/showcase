@@ -1,6 +1,13 @@
+import Background from "../Background";
+import ContactForm from "./ContactForm";
+
 const Contact = (props) => {
     return (
-        <>Hello Contact</>
+        <>
+            <Background />
+            
+            <ContactForm />
+        </>
     );
 }
 

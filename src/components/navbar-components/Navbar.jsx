@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
 
-const Navbar = (props) => {
-    const width = window.innerWidth;
-    console.log(width);
+const Navbar = () => {
     return (
         <nav className="bg-red-500
+                        border-b-4
+                        border-red-900
                         fixed
                         w-screen
                         z-10">
@@ -13,10 +13,58 @@ const Navbar = (props) => {
                             gap-10 
                             justify-center
                             items-center">
-                <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/About">About</NavLink></li>
-                <li><NavLink to="/Projects">Projects</NavLink></li>
-                <li><NavLink to="/Contact">Contact</NavLink></li>
+                
+                <NavLink
+                    to="/"
+                    className={({ isActive, isPending, isTransitioning }) =>
+                        [
+                        isPending ? "pending" : "",
+                        isActive ? "active" : "",
+                        isTransitioning ? "transitioning" : "",
+                        ].join(" ")
+                    }
+                    >
+                    Home
+                </NavLink>
+                
+                <NavLink
+                    to="/About"
+                    className={({ isActive, isPending, isTransitioning }) =>
+                        [
+                        isPending ? "pending" : "",
+                        isActive ? "active" : "",
+                        isTransitioning ? "transitioning" : "",
+                        ].join(" ")
+                    }
+                    >
+                    About
+                </NavLink>
+                
+                <NavLink
+                    to="/Projects"
+                    className={({ isActive, isPending, isTransitioning }) =>
+                        [
+                        isPending ? "pending" : "",
+                        isActive ? "active" : "",
+                        isTransitioning ? "transitioning" : "",
+                        ].join(" ")
+                    }
+                    >
+                    Projects
+                </NavLink>
+                
+                <NavLink
+                    to="/Contact"
+                    className={({ isActive, isPending, isTransitioning }) =>
+                        [
+                        isPending ? "pending" : "",
+                        isActive ? "active" : "",
+                        isTransitioning ? "transitioning" : "",
+                        ].join(" ")
+                    }
+                    >
+                    Contact
+                </NavLink>
             </ul>
         </nav>
     );

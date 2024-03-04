@@ -1,11 +1,54 @@
-/* Background styles  */
-.bg-pix-left {
-    background-image: url("images/manada_background.png");
-    background-position: left;
+/* Navbar styles */
+.active {
+    color: white;
 }
+
+.active::before,
+.active::after {
+    width: 12px;
+    height: 12px;
+}
+.active::before {
+    content: "> ";
+}
+
+.active::after {
+    content: " <";
+}
+
+.drop-down {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    background-color: rgb(239, 68, 68);
+    border-bottom: 4px solid darkRed;
+}
+
+.fade-in {
+    animation: fadeIn;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: smooth;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Background styles  */
 
 .bg-pix-left,
 .bg-pix-right {
+    background-image: url("/images/manada_background.png");
     background-size: full;
     animation: slideLeft;
     animation-duration: 1s;
@@ -14,8 +57,11 @@
     overflow: scroll;
 }
 
+.bg-pix-left {
+    background-position: left;
+}
+
 .bg-pix-right {
-    background-image: url("images/manada_background.png");
     background-position: right;
     animation-direction: reverse;
 }
@@ -32,7 +78,7 @@
 
 /* Portfolio styles */
 .custom-link:hover {
-    cursor: url('./icons/cursor-icon.png'), auto;
+    cursor: url('/icons/cursor-icon.png'), auto;
     transform: scale(1.10);
     transition: linear;
     transition-duration: 0.2s;

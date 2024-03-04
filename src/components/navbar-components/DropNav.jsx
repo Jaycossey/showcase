@@ -20,6 +20,7 @@ const DropNav = () => {
                         p-2">
             <img onClick={handleDrop} 
                 className="w-10 
+                            custom-link
                             m-auto
                             drop-shadow-2xl
                             shadow-black" 

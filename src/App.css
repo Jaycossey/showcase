@@ -48,7 +48,7 @@
 
 .bg-pix-left,
 .bg-pix-right {
-    background-image: url("./images/manada_background.png");
+    background-image: url("/images/manada_background.png");
     background-size: full;
     animation: slideLeft;
     animation-duration: 1s;
@@ -78,7 +78,7 @@
 
 /* Portfolio styles */
 .custom-link:hover {
-    cursor: url('./icons/cursor-icon.png'), auto;
+    cursor: url('/icons/cursor-icon.png'), auto;
     transform: scale(1.10);
     transition: linear;
     transition-duration: 0.2s;

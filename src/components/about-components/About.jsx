@@ -6,8 +6,9 @@ const About = (props) => {
     
     return (
         <>
-            <div id="aboutSection" className="max-w-screen
-                            min-h-screen
+            <div id="aboutSection" 
+                    className="w-screen
+                            h-screen
                             bg-pix-left
                             p-10
                             pt-20

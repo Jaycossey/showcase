@@ -1,14 +1,39 @@
+import { useRef } from 'react';
+// import font awesome icons
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import emailjs 
+import emailjs from '@emailjs/browser';
+// import custom components
 import ContactLinks from './ContactLinks';
 import TextInput from './TextInput';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Reusable card component to hold plaintext
 const ContactForm = (props) => {
-    // const handleSubmit = () => {
-    //     event.preventDefault();
-        
-    // }
+    // ref for the form 
+    const formRef = useRef();
+
+    // on Submit of form
+    const handleSubmit = (event) => {
+        // prevent page refresh
+        event.preventDefault();
+
+        // emailjs package
+        emailjs
+            // send form method, params in docs, currently in testing and development
+            .sendForm('contact_service', 'contact_form', formRef.current, {
+                publicKey: 'T0S-t4u_pISfOGgum',
+            })
+            // console.log success / fail 
+            .then(
+                () => {
+                console.log('SUCCESS!');
+                },
+                (error) => {
+                console.log('FAILED...', error.text);
+                },
+            );
+    }
     
     return (
         // Container div
@@ -27,28 +52,35 @@ const ContactForm = (props) => {
                         m-auto
                         mt-10">
 
+            {/* Contact links for linkedin, github and stackoverflow */}
             <ContactLinks />
             <p>If you would like to work with me, follow these links or fill out the form below!</p>
             
-            <form id="contactForm" 
-                action="https://formsubmit.co/dcf3516cf6ffc1cefb232d15e256a2a5" 
-                method="POST"
+            {/* Custom contact form */}
+            <form ref={formRef}  
+                // Handle submit
+                onSubmit={handleSubmit}
                 className='flex 
                             flex-col 
                             text-left 
                             gap-2 
                             pt-4'>
-
-                <TextInput label="Name" type="text" placeholder="Enter your name" />
-                <TextInput label="Email" type="email" placeholder="Email" />
-                <TextInput label="Company" type="text" placeholder="Company Name" />
-                <TextInput label="Subject" type="text" placeholder="Message Subject" />
+                
+                {/* Contact details of client -- THESE NEED TO MATCH THE email.js VARIABLES */}
+                <TextInput label="user_name" labelName="Name" type="text" placeholder="Please enter your name" />
+                <TextInput label="user_email" labelName="Email" type="email" placeholder="Please enter your email" />
+                <TextInput label="user_company" labelName="Company" type="text" placeholder="Please enter your company's name" />
+                <TextInput label="subject" labelName="Subject" type="text" placeholder="Message Subject" />
+                
+                {/* Contact form message content */}
                 <label for="message">Message:</label>
                 <textarea name="message"
-                        className="h-40
+                        className="h-20
                                     p-2
                                     rounded-md" 
                         placeholder="Your message here."></textarea>
+                
+                {/* Submit button, email fontawesome icon */}
                 <button type="submit">
                     <FontAwesomeIcon
                         className="text-3xl"

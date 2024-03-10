@@ -3,6 +3,16 @@ import { useEffect, useRef } from "react";
 // imort custom Effect Class
 import Effect from "./utils/Effect";
 
+// IMPORTANT COMPONENT INFORMATION!!!! ---------------------
+/**
+ * This component needs to change slightly, mainly the width and height
+ * If a screensize changes, then it will take a refresh to update the canvas size
+ * 
+ * I need to create a useEffect listener to handle this.
+ * 
+ * 
+ */
+
 // Background component
 const Background = (props) => {
     // width and height of canvas, using window height and width

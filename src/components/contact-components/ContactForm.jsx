@@ -20,26 +20,28 @@ const subPlace = "Message Subject";
 
 // Reusable card component to hold plaintext
 const ContactForm = (props) => {
-
+    // form validation
     const { register, handleSubmit } = useForm();
-    const onSubmit = (data) => {
-        console.log("Check", props.toggleThanks);
+    // onSubmit function 
+    const onSubmit = () => {
+        // toggle thankyou page
         props.toggleThanks(true);
+
         // emailjs package
-        // emailjs
-        //     // send form method, params in docs, currently in testing and development
-        //     .sendForm('contact_service', 'contact_form', formRef.current, {
-        //         publicKey: 'T0S-t4u_pISfOGgum',
-        //     })
-        //     // console.log success / fail 
-        //     .then(
-        //         () => {
-        //         console.log('SUCCESS!');
-        //         },
-        //         (error) => {
-        //         console.log('FAILED...', error.text);
-        //         },
-        //     );
+        emailjs
+            // send form method, params in docs, currently in testing and development
+            .sendForm('contact_service', 'contact_form', formRef.current, {
+                publicKey: 'T0S-t4u_pISfOGgum',
+            })
+            // console.log success / fail 
+            .then(
+                () => {
+                console.log('SUCCESS!');
+                },
+                (error) => {
+                console.log('FAILED...', error.text);
+                },
+            );
 
     }
 

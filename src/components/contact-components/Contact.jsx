@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = (props) => {
     return (
-        <div className="pt-10">
+        <div className="pt-8">
             <Background />
             
             <ContactForm />

@@ -1,9 +1,9 @@
 const TextInput = (props) => {
-    const {label, type, placeholder} = props;
+    const {label, labelName, type, placeholder} = props;
 
     return (
         <>
-            <label for={label}>{label}:</label>
+            <label for={label}>{labelName}:</label>
             <input className="p-1
                             rounded-md" 
                     type={type} 

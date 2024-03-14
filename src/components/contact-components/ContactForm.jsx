@@ -47,33 +47,6 @@ const ContactForm = (props) => {
 
     // ref for the form 
     const formRef = useRef();
-
-    // // on Submit of form
-    // const handleSubmit = (event) => {
-    //     // prevent page refresh
-    //     event.preventDefault();
-    //     console.log("click, check values");
-
-
-    //     // emailjs package
-    //     // emailjs
-    //     //     // send form method, params in docs, currently in testing and development
-    //     //     .sendForm('contact_service', 'contact_form', formRef.current, {
-    //     //         publicKey: 'T0S-t4u_pISfOGgum',
-    //     //     })
-    //     //     // console.log success / fail 
-    //     //     .then(
-    //     //         () => {
-    //     //         console.log('SUCCESS!');
-    //     //         },
-    //     //         (error) => {
-    //     //         console.log('FAILED...', error.text);
-    //     //         },
-    //     //     );
-
-    //     event.target.reset();
-
-    // }
     
     return (
         // Container div

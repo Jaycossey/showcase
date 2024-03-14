@@ -26,6 +26,8 @@ const Projects = (props) => {
                     {projectArray.map((project, i) => {
                         return <Presentation key={i} title={project.title} desc={project.description} image={project.image} link={project.link} />
                     })}
+
+                    {/* ADD MORE PROJECTS!!!! */}
                 </div>
             </div>
         </>

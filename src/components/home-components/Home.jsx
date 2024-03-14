@@ -2,6 +2,7 @@ import Background from '../Background';
 import Card from "../containers/Card";
 
 const Home = (props) => {
+    const techStack = "HTML | CSS | JavaScript | Node.JS | React.JS | jQuery | BootstrapCSS | TailwindCSS | Git | GitHub";
 
     return (
         <>
@@ -29,9 +30,10 @@ const Home = (props) => {
                                 src="./images/profile.png" 
                                 alt="Profile Photo" />
                             
-                            <Card text="My name is Ian, I am a Software Developer" />
-            </div>
+                            <Card text="My name is Ian, I am a Front End Software Developer with a passion for bringing your software needs to life." />
+                            <Card text={techStack} />
 
+            </div>
 
         </>
     );

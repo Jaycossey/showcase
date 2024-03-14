@@ -8,11 +8,25 @@ const projectArray = [
         link: "http://pandltunes.co.uk/"
     },
     {
+        title: "Algorithms (WIP)",
+        description: "Personal project created with JavaScript and Jest to practice common algorithms",
+        image: "/images/algorithms.png",
+        techStack: "JavaScript, Jest, Node.JS",
+        link: "https://github.com/Jaycossey/algorithms"
+    },
+    {
         title: "Portfolio Generator",
         description: "Node project to automate portfolio presentation sites, created for more efficient presentation sites for employers, takes CLI to handle generation.",
         image: "/images/portfolioGen.png",
         techStack: "Node.JS, JavaScript, HTML, CSS, npm",
         link: "https://github.com/Jaycossey/portfolio-generator"
+    },
+    {
+        title: "MayflyOasis",
+        description: "Front End E-Commerce site concept demo.",
+        image: "/images/mayfly.png",
+        techStack: "HTML, CSS, JavaScript, React.JS, TailwindCSS, npm",
+        link: "https://mayflyoasis.netlify.app/"
     },
     {
         title: "README Generator",
@@ -34,13 +48,6 @@ const projectArray = [
         image: "/images/policeInt.png",
         techStack: "HTML, CSS, JavaScript, jQuery",
         link: "https://github.com/Alan-Chumbley/Police-Interceptors"
-    },
-    {
-        title: "MayflyOasis",
-        description: "Front End E-Commerce site concept demo.",
-        image: "/images/mayfly.png",
-        techStack: "HTML, CSS, JavaScript, React.JS, TailwindCSS, npm",
-        link: "https://mayflyoasis.netlify.app/"
     }
 ];
 

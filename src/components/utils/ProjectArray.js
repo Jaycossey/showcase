@@ -22,6 +22,13 @@ const projectArray = [
         link: "https://github.com/Jaycossey/portfolio-generator"
     },
     {
+        title: "MayflyOasis",
+        description: "Front End E-Commerce site concept demo.",
+        image: "/images/mayfly.png",
+        techStack: "HTML, CSS, JavaScript, React.JS, TailwindCSS, npm",
+        link: "https://mayflyoasis.netlify.app/"
+    },
+    {
         title: "README Generator",
         description: "Node Project to automate README.md file generation using CLI inputs.",
         image: "/images/readmeGen.png",
@@ -41,13 +48,6 @@ const projectArray = [
         image: "/images/policeInt.png",
         techStack: "HTML, CSS, JavaScript, jQuery",
         link: "https://github.com/Alan-Chumbley/Police-Interceptors"
-    },
-    {
-        title: "MayflyOasis",
-        description: "Front End E-Commerce site concept demo.",
-        image: "/images/mayfly.png",
-        techStack: "HTML, CSS, JavaScript, React.JS, TailwindCSS, npm",
-        link: "https://mayflyoasis.netlify.app/"
     }
 ];
 

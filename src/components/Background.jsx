@@ -5,9 +5,11 @@ import Effect from "./utils/Effect";
 
 // Background component
 const Background = (props) => {
-    // width and height of canvas, using window height and width
-    let width = window.innerWidth;
-    let height = window.innerHeight;
+    // width and height of canvas !----- TODO - Ensure dynamic rendering of the component 
+    // to handle the screen resolution changes, using desktop max for current to ensure responsiveness 
+    // for the moment, needs fix to be responsive 
+    let width = 1920;
+    let height = 1080;
 
     // reference to canvas element
     const canvasRef = useRef(null);

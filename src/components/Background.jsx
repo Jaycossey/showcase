@@ -57,7 +57,7 @@ const Background = (props) => {
             height={height} 
             className="fixed
                     -z-10
-                    bg-purple-700">Hello Backround</canvas>
+                    bg-code-img">Hello Backround</canvas>
     );
 }
 

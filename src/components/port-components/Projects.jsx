@@ -6,10 +6,9 @@ const Projects = (props) => {
     return (
         <>
             <div className="w-screen
-                            h-screen
-                            bg-pix-right
-                            pt-20
-                            p-10
+                            h-max-content
+                            bg-purple-custom
+                            p-20
                             flex
                             flex-col">
                 <Card text="My Projects" />

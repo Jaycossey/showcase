@@ -57,6 +57,18 @@
     overflow: scroll;
 }
 
+.bg-code-img {
+    background-image: url('./images/codesnap.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: full;
+    background-opacity: 0.2;
+}
+
+.bg-purple-custom {
+    background-color: rgba(137, 0, 161, 0.9);
+}
+
 .bg-pix-left {
     background-position: left;
 }

@@ -15,7 +15,7 @@ const Contact = (props) => {
     }
 
     return (
-        <div className="pt-8">
+        <div className="p-10">
             <Background />
             
             {formRender()}

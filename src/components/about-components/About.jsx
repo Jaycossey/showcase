@@ -7,18 +7,17 @@ const About = (props) => {
         <>
             <div id="aboutSection" 
                     className="w-screen
-                            h-screen
-                            bg-pix-left
-                            p-10
-                            pt-20
+                            h-max-content
+                            p-20
+                            pt-16
                             flex
                             flex-col
-                            text-lg
+                            text-2xl
                             gap-10">
+                                
                 <Card text="About Me" />
                 
                 <Card text={`${aboutText}`} />
-                {/* EMPTY SPACE NEEDS FILLING */}
             </div>
         </>
     );

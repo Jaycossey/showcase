@@ -1,6 +1,6 @@
 const Presentation = (props) => {
     const {title, desc, image, tech, depLink, gitHubLink} = props;
-    const handleClick = () => {
+    const handleClick = (link) => {
         window.open(link, "_blank", "noopener noreferrer");
     }
 
@@ -37,12 +37,12 @@ const Presentation = (props) => {
 
                 <p className="text-sm mb-2">{tech}</p>
                 <p className="text-sm pb-1">{desc}</p>
-                <a onClick={handleClick} 
+                <a onClick={() => handleClick(gitHubLink)} 
                     className="text-sm font-semibold hover:cursor-pointer">
                         {gitHubLink}
                 </a>
                 
-                <a onClick={handleClick} 
+                <a onClick={() => handleClick(depLink)} 
                     className="text-sm font-semibold hover:cursor-pointer">
                         {depLink}
                 </a>

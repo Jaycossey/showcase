@@ -6,7 +6,7 @@ const ContactLinks = () => {
     return (
         // Font awesome container for contact section
         <div className='text-3xl 
-                        text-left'>
+                        sm:text-left'>
 
             {/* Icons within their respective anchors */}
             <a href="https://www.linkedin.com/in/ian-j-scott/" target="_blank" referrer="noreferrer noopener">

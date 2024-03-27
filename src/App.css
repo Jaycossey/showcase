@@ -2,6 +2,13 @@ body {
     scroll-behaviour: ease;
     transition-duration: 1s;
 }
+
+/* About font styles */
+#aboutSection > div:nth-child(2) {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 /* Background styles  */
 .bg-purple-custom {
     background-color: rgba(137, 0, 161, 0.9);
@@ -16,7 +23,6 @@ body {
 }
 /* Portfolio styles */
 .custom-link:hover {
-    /* cursor: url('/icons/cursor-icon.png'), auto; */
     transform: scale(1.30);
     transition: linear;
     transition-duration: 0.2s;

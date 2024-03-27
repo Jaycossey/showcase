@@ -15,7 +15,7 @@ const Contact = (props) => {
     }
 
     return (
-        <div className="p-10">
+        <div className="sm:p-10">
             <Background />
             
             {formRender()}

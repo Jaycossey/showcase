@@ -50,9 +50,9 @@ const ContactForm = (props) => {
     
     return (
         // Container div
-        <div className="w-8/12
-                        bg-opacity-80
+        <div className="bg-opacity-80
                         bg-slate-200
+                        m-8
                         rounded-2xl
                         border-4
                         border-purple-500
@@ -62,7 +62,7 @@ const ContactForm = (props) => {
                         shadow-black
                         shadow-2xl
                         h-max
-                        m-auto
+                        sm:m-auto
                         mt-10">
 
             <p className='text-2xl'>If you would like to work with me, fill out the form below!</p>

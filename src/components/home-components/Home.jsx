@@ -16,7 +16,8 @@ const Home = (props) => {
                             min-h-screen
                             text-center
                             pb-28
-                            px-20
+                            px-8
+                            sm:px-20
                             gap-10
                             text-2xl
                             text-white

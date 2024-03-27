@@ -1,14 +1,15 @@
 import Card from '../containers/Card';
 
 const About = (props) => {
-    const aboutText = "As a software developer skilled in HTML, CSS, JavaScript, React, and Node.js, I specialize in delivering comprehensive solutions across various domains. With a focus on front-end web development, I design captivating interfaces and optimize website performance for seamless user experiences. Beyond web design, I leverage automation to streamline processes and enhance efficiency, utilizing Node.js to build robust backend systems that automate workflows, reducing manual intervention and errors. My expertise extends to crafting bespoke software solutions tailored to meet the unique needs of each client, enabling businesses to thrive in today's digital landscape.";
+    const aboutText = "Embarking on my journey in software development in 2022, I began my career self-learning, solidifying my understanding of fundamental principles and sharpening my skills in web design and JavaScript algorithms. Recognizing the value of structured education, I pursued further training by enrolling in a front-end web development bootcamp in September 2023. Since then, my focus has been on mastering the MERN tech stack. Beyond specific technologies, my primary objective remains centered on identifying and addressing the diverse technological needs of individuals and businesses. With a problem-solving mindset, adaptability, and a genuine passion for creating impactful digital solutions, I am committed to collaborating with clients to deliver tailored and innovative responses to their technological challenges, regardless of their scale or industry.";
 
     return (
         <>
             <div id="aboutSection" 
                     className="w-screen
                             h-max-content
-                            p-20
+                            p-8
+                            sm:p-20
                             pt-16
                             flex
                             flex-col

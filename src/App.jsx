@@ -11,7 +11,7 @@ const App = () => {
   // scroll to projects page on button click
   const handleClick = () => {
     const anchorY = projectRef.current.getBoundingClientRect().y;
-    window.scrollTo(0, scrollY + anchorY);
+    window.scrollTo({top: scrollY + anchorY, behavior: "smooth"});
   }
 
   return (

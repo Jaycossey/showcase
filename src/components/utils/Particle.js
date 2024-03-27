@@ -8,8 +8,8 @@ class Particle {
         this.x = this.radius + Math.random() * (this.effect.width - this.radius * 1);
         this.y = this.radius + Math.random() * (this.effect.height - this.radius * 1);
         // velocity of each particle
-        this.vx = Math.random() * 1 - 0.5;
-        this.vy = Math.random() * 1 - 0.5;
+        this.vx = Math.random() * 1 - 0.2;
+        this.vy = Math.random() * 1 - 0.2;
     }
     // draw method 
     draw(context) {

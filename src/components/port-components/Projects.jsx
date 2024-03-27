@@ -3,12 +3,15 @@ import projectArray from "../utils/ProjectArray";
 import Presentation from "./Presentation";
 
 const Projects = (props) => {
+
     return (
         <>
             <div className="w-screen
+                            min-h-screen
                             h-max-content
                             bg-purple-custom
-                            p-20
+                            p-10
+                            text-2xl
                             flex
                             flex-col">
                 <Card text="My Projects" />
@@ -23,7 +26,7 @@ const Projects = (props) => {
                                 items-center
                                 h-max-content">
                     {projectArray.map((project, i) => {
-                        return <Presentation key={i} title={project.title} desc={project.description} image={project.image} link={project.link} />
+                        return <Presentation key={i} title={project.title} desc={project.description} tech={project.techStack} image={project.image} gitHubLink={project.gitHubLink} depLink={project.depLink} />
                     })}
 
                     {/* ADD MORE PROJECTS!!!! */}

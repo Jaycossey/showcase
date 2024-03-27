@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 // form validation 
 import { useForm } from 'react-hook-form';
 // import font awesome icons
@@ -65,9 +65,7 @@ const ContactForm = (props) => {
                         m-auto
                         mt-10">
 
-            {/* Contact links for linkedin, github and stackoverflow */}
-            <ContactLinks />
-            <p>If you would like to work with me, follow these links or fill out the form below!</p>
+            <p className='text-2xl'>If you would like to work with me, fill out the form below!</p>
             
             {/* Custom contact form */}
             <form ref={formRef}  

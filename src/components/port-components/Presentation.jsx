@@ -1,45 +1,51 @@
 const Presentation = (props) => {
-    const {title, desc, image, link} = props;
+    const {title, desc, image, tech, depLink, gitHubLink} = props;
     const handleClick = () => {
         window.open(link, "_blank", "noopener noreferrer");
     }
 
     return (        
-            <div onClick={handleClick} 
-                className="bg-slate-200
+            <div className="bg-slate-200
                     bg-opacity-80
                     rounded-2xl
                     border-4
                     border-purple-500
                     text-purple-800
-                    text-center
+                    text-left
                     flex
                     flex-col
-                    items-center
-                    p-1
+                    items-left
+                    p-2
                     shadow-black
                     shadow-2xl
-                    h-64
-                    w-80
+                    max-w-80
                     custom-link">
 
-                <p className="text-lg
+                
+                <img className="w-full
+                                h-28
+                                shadow-xl
+                                rounded-md" 
+                    src={image}
+                    alt="Project Screenshot" />
+
+                <p className="text-md
                             underline
                             underline-offset-2">
                                 {title}
                 </p>
-                
-                <img className="w-38
-                                h-20
-                                shadow-xl
-                                rounded-md
-                                my-2" 
-                    src={image}
-                    alt="Project Screenshot" />
 
-                <p className="text-sm">{desc}</p>
+                <p className="text-sm mb-2">{tech}</p>
+                <p className="text-sm pb-1">{desc}</p>
+                <a onClick={handleClick} 
+                    className="text-sm font-semibold hover:cursor-pointer">
+                        {gitHubLink}
+                </a>
                 
-                <p className="text-sm">{link}</p>
+                <a onClick={handleClick} 
+                    className="text-sm font-semibold hover:cursor-pointer">
+                        {depLink}
+                </a>
             </div>
     );
 }

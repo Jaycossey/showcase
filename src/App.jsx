@@ -1,47 +1,28 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/navbar-components/Navbar';
-import DropNav from './components/navbar-components/DropNav';
 import Home from './components/home-components/Home';
 import About from './components/about-components/About';
 import Projects from './components/port-components/Projects';
 import Contact from './components/contact-components/Contact';
 import './App.css';
+import { useRef } from 'react';
 
 const App = () => {
-  let width = window.innerWidth;
-  
+  const projectRef = useRef();
 
-  if (width >= 600) {
-    return (
-      <>
-        <Router>
-          <Navbar />
-
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/Projects" element={<Projects />} />
-            <Route path="/Contact" element={<Contact />} />
-          </Routes>
-        </Router>
-      </>
-    );
-  } else {
-    return (
-      <>
-        <Router>
-          <DropNav />
-
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/Projects" element={<Projects />} />
-            <Route path="/Contact" element={<Contact />} />
-          </Routes>
-        </Router>
-      </>
-    );
+  // scroll to projects page on button click
+  const handleClick = () => {
+    const anchorY = projectRef.current.getBoundingClientRect().y;
+    window.scrollTo(0, scrollY + anchorY);
   }
+
+  return (
+    <>
+      <Home onClick={handleClick} />
+      <About />
+      <a ref={projectRef}></a>
+      <Projects />
+      <Contact />
+    </>
+  )
 }
 
 export default App

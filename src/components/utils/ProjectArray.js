@@ -1,53 +1,57 @@
 // Array of project objects
 const projectArray = [
     {
-        title: "P & L Tunes",
+        title: "Client Side Web App",
         description: "Website created for P&L Tunes, a music review company, the client requested a mobile first site to display their reviews and staff, as well as including a contact form.",
         image: "/images/pandl.png",
-        techStack: "HTML, CSS, JavaScript, TailwindCSS, React.JS",
-        link: "http://pandltunes.co.uk/"
+        techStack: "HTML | CSS | JavaScript | TailwindCSS | React.JS",
+        depLink: "http://pandltunes.co.uk/",
+        gitHubLink: "https://github.com/Jaycossey/pandl"
     },
     {
         title: "Algorithms (WIP)",
         description: "Personal project created with JavaScript and Jest to practice common algorithms",
         image: "/images/algorithms.png",
-        techStack: "JavaScript, Jest, Node.JS",
-        link: "https://github.com/Jaycossey/algorithms"
+        techStack: "JavaScript | Jest | Node.JS",
+        gitHubLink: "https://github.com/Jaycossey/algorithms"
     },
     {
-        title: "Portfolio Generator",
-        description: "Node project to automate portfolio presentation sites, created for more efficient presentation sites for employers, takes CLI to handle generation.",
+        title: "NodeJS Portfolio Generator",
+        description: "Node project to automate portfolio presentation sites, takes CLI to handle generation.",
         image: "/images/portfolioGen.png",
-        techStack: "Node.JS, JavaScript, HTML, CSS, npm",
-        link: "https://github.com/Jaycossey/portfolio-generator"
+        techStack: "Node.JS | JavaScript | HTML | CSS | npm",
+        gitHubLink: "https://github.com/Jaycossey/portfolio-generator",
+        depLink: "https://jaycossey.github.io/presentation-portfolio/"
     },
     {
-        title: "MayflyOasis",
-        description: "Front End E-Commerce site concept demo.",
+        title: "E-Commerce Demo",
+        description: "Collaborative Front-End E-Commerce site concept demo, MayflyOasis.",
         image: "/images/mayfly.png",
-        techStack: "HTML, CSS, JavaScript, React.JS, TailwindCSS, npm",
-        link: "https://mayflyoasis.netlify.app/"
+        techStack: "HTML | CSS | JavaScript | React.JS | TailwindCSS | npm",
+        gitHubLink: "https://github.com/Jaycossey/mayflyOasis",
+        depLink: "https://mayflyoasis.netlify.app/"
     },
     {
-        title: "README Generator",
+        title: "NodeJS README Generator",
         description: "Node Project to automate README.md file generation using CLI inputs.",
         image: "/images/readmeGen.png",
-        techStack: "Node.JS, JavaScript, Markdown",
-        link: "https://github.com/Jaycossey/readme-generator"
+        techStack: "Node.JS | JavaScript | Markdown",
+        gitHubLink: "https://github.com/Jaycossey/readme-generator"
     }, 
     {
-        title: "Team Profile Generator",
+        title: "NodeJS Team Profile Generator",
         description: "Node Project to practice file generation, using CLI inputs to generate a team viewer.",
         image: "/images/teamProf.png",
-        techStack: "Node.JS, JavaScript, HTML, CSS",
-        link: "https://github.com/Jaycossey/team-profile-gen"
+        techStack: "Node.JS | JavaScript | HTML | CSS",
+        gitHubLink: "https://github.com/Jaycossey/team-profile-gen"
     },
     {
-        title: "Police Interceptors",
-        description: "Group project created to display localised crime data for a searched area. Calls the UK police data API.",
+        title: "Client Side Web App",
+        description: "Collaborative Front-End web app displaying current crime data from UK police API.",
         image: "/images/policeInt.png",
-        techStack: "HTML, CSS, JavaScript, jQuery",
-        link: "https://github.com/Alan-Chumbley/Police-Interceptors"
+        techStack: "HTML | CSS | JavaScript | jQuery",
+        gitHubLink: "https://github.com/Alan-Chumbley/Police-Interceptors",
+        depLink: "https://alan-chumbley.github.io/Police-Interceptors/"
     }
 ];
 

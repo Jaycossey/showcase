@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 // form validation 
 import { useForm } from 'react-hook-form';
 // import font awesome icons
@@ -50,9 +50,9 @@ const ContactForm = (props) => {
     
     return (
         // Container div
-        <div className="w-8/12
-                        bg-opacity-80
+        <div className="bg-opacity-80
                         bg-slate-200
+                        m-8
                         rounded-2xl
                         border-4
                         border-purple-500
@@ -62,12 +62,10 @@ const ContactForm = (props) => {
                         shadow-black
                         shadow-2xl
                         h-max
-                        m-auto
+                        sm:m-auto
                         mt-10">
 
-            {/* Contact links for linkedin, github and stackoverflow */}
-            <ContactLinks />
-            <p>If you would like to work with me, follow these links or fill out the form below!</p>
+            <p className='text-2xl'>If you would like to work with me, fill out the form below!</p>
             
             {/* Custom contact form */}
             <form ref={formRef}  

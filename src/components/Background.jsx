@@ -8,8 +8,8 @@ const Background = (props) => {
     // width and height of canvas !----- TODO - Ensure dynamic rendering of the component 
     // to handle the screen resolution changes, using desktop max for current to ensure responsiveness 
     // for the moment, needs fix to be responsive 
-    let width = 1920;
-    let height = 1080;
+    let width = window.innerWidth - 20;
+    let height = window.innerHeight - 20;
 
     // reference to canvas element
     const canvasRef = useRef(null);
@@ -56,8 +56,7 @@ const Background = (props) => {
             width={width}
             height={height} 
             className="fixed
-                    -z-10
-                    bg-purple-700">Hello Backround</canvas>
+                    -z-10">Hello Backround</canvas>
     );
 }
 

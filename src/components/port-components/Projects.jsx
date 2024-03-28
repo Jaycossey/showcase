@@ -6,9 +6,10 @@ const Projects = (props) => {
 
     return (
         <>
-            <div className="w-screen
-                            min-h-screen
+            <div className="min-h-screen
                             h-max-content
+                            m-2
+                            rounded-md
                             bg-purple-custom
                             p-10
                             text-2xl

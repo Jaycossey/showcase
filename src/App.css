@@ -13,6 +13,10 @@
     width: 350px;
 }
 
+.dark-custom-bg {
+    background-color: rgba(37, 37, 38, 0.5);
+}
+
 .custom-link > img {
     height: 40%;
 }

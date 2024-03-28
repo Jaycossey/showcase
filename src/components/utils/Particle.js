@@ -8,8 +8,8 @@ class Particle {
         this.x = this.radius + Math.random() * (this.effect.width - this.radius * 1);
         this.y = this.radius + Math.random() * (this.effect.height - this.radius * 1);
         // velocity of each particle
-        this.vx = Math.random() * 1 - 0.2;
-        this.vy = Math.random() * 1 - 0.2;
+        this.vx = Math.random() * 1 - 0.5;
+        this.vy = Math.random() * 1 - 0.5;
     }
     // draw method 
     draw(context) {
@@ -25,11 +25,11 @@ class Particle {
         // this particle position x and y
         this.x += this.vx;
         this.y += this.vy;
-        // if within range, update the particles velocity x
-        if (this.x > this.effect.width - this.radius || this.x < this.radius) this.vx *= -0.5;
+        // if within range, update the particles velocity x <==== This isnt quite true, if within radius of width, reverse speed/direction
+        if (this.x > this.effect.width - this.radius || this.x < this.radius) this.vx = -this.vx;
 
-        // if within range, update the particles velocity y        
-        if (this.y > this.effect.height - this.radius || this.y < this.radius) this.vy *= -0.5;
+        // if within range, update the particles velocity y <=== this is as above
+        if (this.y > this.effect.height - this.radius || this.y < this.radius) this.vy = -this.vy;
     }
 }
 

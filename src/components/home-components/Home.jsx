@@ -13,7 +13,8 @@ const Home = (props) => {
 
             <div className='flex
                             flex-col
-                            min-h-screen
+                            m-2
+                            rounded-md
                             text-center
                             pb-28
                             px-8

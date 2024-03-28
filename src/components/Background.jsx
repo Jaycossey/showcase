@@ -1,12 +1,10 @@
 // imports
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 // imort custom Effect Class
 import Effect from "./utils/Effect";
 
 // Background component
 const Background = (props) => {
-    // width and height of canvas !----- TODO - Ensure dynamic rendering of the component 
-    // to handle the screen resolution changes, using desktop max for current to ensure responsiveness 
     // for the moment, needs fix to be responsive 
     let width = window.innerWidth - 20;
     let height = window.innerHeight - 20;
@@ -16,15 +14,16 @@ const Background = (props) => {
 
     // on initial load
     useEffect(() => {
+
         // create canvas reference and get context
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
 
         // create a gradient for each of the particles as they travel on screen
         const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-        gradient.addColorStop(0, 'blue');
-        gradient.addColorStop(0.5, 'purple');
-        gradient.addColorStop(1, 'red');
+        gradient.addColorStop(0, 'red');
+        gradient.addColorStop(0.5, 'magenta');
+        gradient.addColorStop(1, 'blue');
 
         // fill the particles of gradient color style
         ctx.fillStyle = gradient;
@@ -46,6 +45,7 @@ const Background = (props) => {
         }
         // call animations
         animate();
+
     }, []);
 
     return (
@@ -56,6 +56,7 @@ const Background = (props) => {
             width={width}
             height={height} 
             className="fixed
+                    m-auto
                     -z-10">Hello Backround</canvas>
     );
 }

@@ -15,7 +15,8 @@ const App = () => {
   }
 
   return (
-    <div className='p-2'>
+    <div className='p-2
+                    dark-custom-bg'>
       <Home onClick={handleClick} />
       <About />
       <a ref={projectRef}></a>

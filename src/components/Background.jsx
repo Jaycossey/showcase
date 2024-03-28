@@ -28,7 +28,7 @@ const Background = (props) => {
         // fill the particles of gradient color style
         ctx.fillStyle = gradient;
         // connecting line styles
-        ctx.strokeStyle = 'cyan';
+        ctx.strokeStyle = 'blue';
 
         // create new Effect (particle system with canvas as ref, handle particles via ctx)
         const effect = new Effect(canvas);

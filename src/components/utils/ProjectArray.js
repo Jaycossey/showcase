@@ -17,7 +17,7 @@ const projectArray = [
     },
     {
         title: "NodeJS Portfolio Generator",
-        description: "Node project to automate portfolio presentation sites, takes CLI to handle generation.",
+        description: "Node CLI project to automate a showcase of projects.",
         image: "/images/portfolioGen.png",
         techStack: "Node.JS | JavaScript | HTML | CSS | npm",
         gitHubLink: "https://github.com/Jaycossey/portfolio-generator",
